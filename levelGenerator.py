@@ -13,16 +13,10 @@ if __name__ == "__main__":
     for i in range(0, len(platforms), 3):
         platforms[i], platforms[i + 1], platforms[i + 2] = map(int, input("Enter (x, y, len) for platform number {} : ".format(i // 3)).split())
     
-    print(platforms)
-
     for i in range(0, len(platforms) - 2, 3):
         x, y, length = platforms[i], platforms[i + 1], platforms[i + 2]
         for j in range(x, x + length):
             level[y - 1][j - 1] = 1
-
-    print()
-    for array in level:
-        print(array)
 
     file = open('levelMap.h', "w")
 
@@ -34,3 +28,5 @@ if __name__ == "__main__":
         file.write(',')
 
     file.write("\n};")
+
+    print("\n*** Output in levelMap.h")
