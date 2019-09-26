@@ -1,6 +1,6 @@
 # Level Generator
 
-A nice little script for generating level platforms:
+A nice little script for generating level platforms.
 
 **Input:**
 1. Input number of platforms
